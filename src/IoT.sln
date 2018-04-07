@@ -1,0 +1,127 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26403.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Iot.Ingestion.Application", "Iot.Ingestion.Application\Iot.Ingestion.Application.sfproj", "{FDBD3F26-52E6-4088-B9F9-940E5FC76249}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iot.Ingestion.RouterService", "Iot.Ingestion.RouterService\Iot.Ingestion.RouterService.csproj", "{09284C49-3741-4B96-8F24-95B5B99F4BF1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ingestion Application", "Ingestion Application", "{35FD05F1-64BC-4904-A931-17641E3AABEB}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Iot.Admin.Application", "Iot.Admin.Application\Iot.Admin.Application.sfproj", "{79A0B13A-6859-48C0-9517-269D788BC046}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Admin Application", "Admin Application", "{7C8BE60B-689C-457F-8260-5583CDF823DE}"
+EndProject
+Project("{A07B5EB6-E848-4116-A8D0-A826331D98C6}") = "Iot.Tenant.Application", "Iot.Tenant.Application\Iot.Tenant.Application.sfproj", "{291371BE-4218-4EEC-996A-CD5B783B6CD0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tenant Application", "Tenant Application", "{BE5420F3-CD91-437C-9BCD-23612FB56C7B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iot.Common", "Iot.Common\Iot.Common.csproj", "{35072B44-BC38-4D61-B96C-AF2BCFFAFB41}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iot.Mocks", "Iot.Mocks\Iot.Mocks.csproj", "{E05F8F27-A728-4C38-BAF9-D78228099FCE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Iot.DeviceEmulator", "Iot.DeviceEmulator\Iot.DeviceEmulator.csproj", "{5CA93865-4B0A-4DBC-9378-BDAD1C396886}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "_Deploy", "_Deploy", "{1F2DBBB7-69AD-4F94-B7F8-5A20E3AE329A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "PublishProfiles", "PublishProfiles", "{2219253F-3D38-4287-93A9-9F61CB532044}"
+	ProjectSection(SolutionItems) = preProject
+		Deploy\Cloud.xml = Deploy\Cloud.xml
+		Deploy\Local.1Node.xml = Deploy\Local.1Node.xml
+		Deploy\Local.5Node.xml = Deploy\Local.5Node.xml
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{4A6A00A1-E16C-4ED2-AB81-4B15AA9A6012}"
+	ProjectSection(SolutionItems) = preProject
+		..\build\build.cmd = ..\build\build.cmd
+		..\build\clean.cmd = ..\build\clean.cmd
+		..\build\deploy.ps1 = ..\build\deploy.ps1
+		..\build\obliterate.ps1 = ..\build\obliterate.ps1
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Admin.WebService", "Iot.Admin.WebService\Iot.Admin.WebService.csproj", "{5E0F0994-966D-4ACE-BE41-7FDE742683F6}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Tenant.DataService", "Iot.Tenant.DataService\Iot.Tenant.DataService.csproj", "{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Tenant.WebService", "Iot.Tenant.WebService\Iot.Tenant.WebService.csproj", "{AFE07FB7-AF21-491F-A8CC-381C5733D437}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Iot.Tenant.DataService.Tests", "Iot.Tenant.DataService.Tests\Iot.Tenant.DataService.Tests.csproj", "{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Release|x64 = Release|x64
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Debug|x64.ActiveCfg = Debug|x64
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Debug|x64.Build.0 = Debug|x64
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Debug|x64.Deploy.0 = Debug|x64
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Release|x64.ActiveCfg = Release|x64
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Release|x64.Build.0 = Release|x64
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249}.Release|x64.Deploy.0 = Release|x64
+		{09284C49-3741-4B96-8F24-95B5B99F4BF1}.Debug|x64.ActiveCfg = Debug|x64
+		{09284C49-3741-4B96-8F24-95B5B99F4BF1}.Debug|x64.Build.0 = Debug|x64
+		{09284C49-3741-4B96-8F24-95B5B99F4BF1}.Release|x64.ActiveCfg = Release|x64
+		{09284C49-3741-4B96-8F24-95B5B99F4BF1}.Release|x64.Build.0 = Release|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Debug|x64.ActiveCfg = Debug|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Debug|x64.Build.0 = Debug|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Debug|x64.Deploy.0 = Debug|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Release|x64.ActiveCfg = Release|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Release|x64.Build.0 = Release|x64
+		{79A0B13A-6859-48C0-9517-269D788BC046}.Release|x64.Deploy.0 = Release|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Debug|x64.ActiveCfg = Debug|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Debug|x64.Build.0 = Debug|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Debug|x64.Deploy.0 = Debug|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Release|x64.ActiveCfg = Release|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Release|x64.Build.0 = Release|x64
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0}.Release|x64.Deploy.0 = Release|x64
+		{35072B44-BC38-4D61-B96C-AF2BCFFAFB41}.Debug|x64.ActiveCfg = Debug|x64
+		{35072B44-BC38-4D61-B96C-AF2BCFFAFB41}.Debug|x64.Build.0 = Debug|x64
+		{35072B44-BC38-4D61-B96C-AF2BCFFAFB41}.Release|x64.ActiveCfg = Release|x64
+		{35072B44-BC38-4D61-B96C-AF2BCFFAFB41}.Release|x64.Build.0 = Release|x64
+		{E05F8F27-A728-4C38-BAF9-D78228099FCE}.Debug|x64.ActiveCfg = Debug|x64
+		{E05F8F27-A728-4C38-BAF9-D78228099FCE}.Debug|x64.Build.0 = Debug|x64
+		{E05F8F27-A728-4C38-BAF9-D78228099FCE}.Release|x64.ActiveCfg = Release|x64
+		{E05F8F27-A728-4C38-BAF9-D78228099FCE}.Release|x64.Build.0 = Release|x64
+		{5CA93865-4B0A-4DBC-9378-BDAD1C396886}.Debug|x64.ActiveCfg = Debug|x64
+		{5CA93865-4B0A-4DBC-9378-BDAD1C396886}.Debug|x64.Build.0 = Debug|x64
+		{5CA93865-4B0A-4DBC-9378-BDAD1C396886}.Release|x64.ActiveCfg = Release|x64
+		{5CA93865-4B0A-4DBC-9378-BDAD1C396886}.Release|x64.Build.0 = Release|x64
+		{5E0F0994-966D-4ACE-BE41-7FDE742683F6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{5E0F0994-966D-4ACE-BE41-7FDE742683F6}.Debug|x64.Build.0 = Debug|Any CPU
+		{5E0F0994-966D-4ACE-BE41-7FDE742683F6}.Release|x64.ActiveCfg = Release|Any CPU
+		{5E0F0994-966D-4ACE-BE41-7FDE742683F6}.Release|x64.Build.0 = Release|Any CPU
+		{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C}.Debug|x64.Build.0 = Debug|Any CPU
+		{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C}.Release|x64.ActiveCfg = Release|Any CPU
+		{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C}.Release|x64.Build.0 = Release|Any CPU
+		{AFE07FB7-AF21-491F-A8CC-381C5733D437}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{AFE07FB7-AF21-491F-A8CC-381C5733D437}.Debug|x64.Build.0 = Debug|Any CPU
+		{AFE07FB7-AF21-491F-A8CC-381C5733D437}.Release|x64.ActiveCfg = Release|Any CPU
+		{AFE07FB7-AF21-491F-A8CC-381C5733D437}.Release|x64.Build.0 = Release|Any CPU
+		{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F}.Debug|x64.Build.0 = Debug|Any CPU
+		{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F}.Release|x64.ActiveCfg = Release|Any CPU
+		{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F}.Release|x64.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDBD3F26-52E6-4088-B9F9-940E5FC76249} = {35FD05F1-64BC-4904-A931-17641E3AABEB}
+		{09284C49-3741-4B96-8F24-95B5B99F4BF1} = {35FD05F1-64BC-4904-A931-17641E3AABEB}
+		{79A0B13A-6859-48C0-9517-269D788BC046} = {7C8BE60B-689C-457F-8260-5583CDF823DE}
+		{291371BE-4218-4EEC-996A-CD5B783B6CD0} = {BE5420F3-CD91-437C-9BCD-23612FB56C7B}
+		{2219253F-3D38-4287-93A9-9F61CB532044} = {1F2DBBB7-69AD-4F94-B7F8-5A20E3AE329A}
+		{4A6A00A1-E16C-4ED2-AB81-4B15AA9A6012} = {1F2DBBB7-69AD-4F94-B7F8-5A20E3AE329A}
+		{5E0F0994-966D-4ACE-BE41-7FDE742683F6} = {7C8BE60B-689C-457F-8260-5583CDF823DE}
+		{8C5A3D25-2356-4D3D-9D63-4AF71E3D0B2C} = {BE5420F3-CD91-437C-9BCD-23612FB56C7B}
+		{AFE07FB7-AF21-491F-A8CC-381C5733D437} = {BE5420F3-CD91-437C-9BCD-23612FB56C7B}
+		{2B4F1268-41D1-4335-8BCA-E1E4C6D4D76F} = {BE5420F3-CD91-437C-9BCD-23612FB56C7B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {811707F1-6463-48AB-8500-05766792D378}
+		EnterpriseLibraryConfigurationToolBinariesPathV6 = packages\EnterpriseLibrary.TransientFaultHandling.6.0.1304.0\lib\portable-net45+win+wp8
+	EndGlobalSection
+EndGlobal

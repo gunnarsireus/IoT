@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>@ViewData["Tenant"] Dashboard</title>
+    <link rel="stylesheet" href="~/css/site.css"/>
+</head>
+<body>
+<div class="container body-content">
+    <header>
+        <h1>@ViewData["Tenant"]</h1>Dashboard
+    </header>
+    @RenderBody()
+    <footer></footer>
+</div>
+    <script src="~/lib/jquery/dist/jquery.js"></script>
+    <script src="~/js/site.js"></script>
+@RenderSection("scripts", required: false)
+</body>
+</html>
