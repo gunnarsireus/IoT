@@ -5,6 +5,8 @@
 
 namespace Iot.Admin.WebService
 {
+    using System;
+    using System.Globalization;
     using System.Threading;
     using Microsoft.ServiceFabric.Services.Runtime;
 
@@ -13,6 +15,8 @@ namespace Iot.Admin.WebService
         // Entry point for the application.
         public static void Main(string[] args)
         {
+            new ArgumentException();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 #if LOCALSERVER
 
             using (LocalServer listener = new LocalServer())

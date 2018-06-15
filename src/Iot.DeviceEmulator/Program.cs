@@ -8,9 +8,11 @@ namespace Iot.DeviceEmulator
     using System;
     using System.Collections.Generic;
     using System.Fabric;
+    using System.Globalization;
     using System.IO;
     using System.Linq;
     using System.Text;
+    using System.Threading;
     using System.Threading.Tasks;
     using Iot.Common;
     using Microsoft.Azure.Devices;
@@ -28,6 +30,8 @@ namespace Iot.DeviceEmulator
 
         private static void Main(string[] args)
         {
+            new ArgumentException();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             Console.WriteLine("Enter IoT Hub connection string: ");
             connectionString = Console.ReadLine();
 

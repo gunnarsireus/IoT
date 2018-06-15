@@ -7,6 +7,7 @@ namespace Iot.Ingestion.RouterService
 {
     using System;
     using System.Diagnostics;
+    using System.Globalization;
     using System.Threading;
     using Microsoft.ServiceFabric.Services.Runtime;
 
@@ -17,6 +18,8 @@ namespace Iot.Ingestion.RouterService
         /// </summary>
         private static void Main()
         {
+            new ArgumentException();
+            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             try
             {
                 // The ServiceManifest.XML file defines one or more service type names.
