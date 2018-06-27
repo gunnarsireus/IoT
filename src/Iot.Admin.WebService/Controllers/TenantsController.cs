@@ -66,8 +66,8 @@ namespace Iot.Admin.WebService.Controllers
             {
                 ApplicationName = application.ApplicationName,
                 HasPersistedState = true,
-                MinReplicaSetSize = 3,
-                TargetReplicaSetSize = 3,
+                MinReplicaSetSize = 1,
+                TargetReplicaSetSize = 1,
                 PartitionSchemeDescription = new UniformInt64RangePartitionSchemeDescription(parameters.DataPartitionCount, Int64.MinValue, Int64.MaxValue),
                 ServiceName = dataServiceNameUriBuilder.Build(),
                 ServiceTypeName = Names.TenantDataServiceTypeName

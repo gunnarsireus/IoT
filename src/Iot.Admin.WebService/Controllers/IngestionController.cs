@@ -78,8 +78,8 @@ namespace Iot.Admin.WebService.Controllers
             {
                 ApplicationName = application.ApplicationName,
                 HasPersistedState = true,
-                MinReplicaSetSize = 3,
-                TargetReplicaSetSize = 3,
+                MinReplicaSetSize = 1,
+                TargetReplicaSetSize = 1,
                 PartitionSchemeDescription = new UniformInt64RangePartitionSchemeDescription(eventHubInfo.PartitionCount, 0, eventHubInfo.PartitionCount - 1),
                 ServiceName = serviceNameUriBuilder.Build(),
                 ServiceTypeName = Names.IngestionRouterServiceTypeName
