@@ -30,8 +30,6 @@ namespace Iot.DeviceEmulator
 
         private static void Main(string[] args)
         {
-            new ArgumentException();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             Console.WriteLine("Enter IoT Hub connection string: ");
             connectionString = Console.ReadLine();
 

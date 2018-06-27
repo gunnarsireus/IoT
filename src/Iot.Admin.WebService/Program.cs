@@ -15,8 +15,6 @@ namespace Iot.Admin.WebService
         // Entry point for the application.
         public static void Main(string[] args)
         {
-            new ArgumentException();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
 #if LOCALSERVER
 
             using (LocalServer listener = new LocalServer())

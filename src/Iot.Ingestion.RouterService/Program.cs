@@ -18,8 +18,6 @@ namespace Iot.Ingestion.RouterService
         /// </summary>
         private static void Main()
         {
-            new ArgumentException();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             try
             {
                 // The ServiceManifest.XML file defines one or more service type names.

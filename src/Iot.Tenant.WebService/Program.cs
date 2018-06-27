@@ -15,8 +15,6 @@ namespace Iot.Tenant.WebService
         // Entry point for the application.
         public static void Main(string[] args)
         {
-            new ArgumentException();
-            Thread.CurrentThread.CurrentUICulture = new CultureInfo("en-US");
             ServiceRuntime.RegisterServiceAsync(
                 "WebServiceType",
                 context =>
