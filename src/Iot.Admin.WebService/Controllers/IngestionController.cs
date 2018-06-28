@@ -61,7 +61,7 @@ namespace Iot.Admin.WebService.Controllers
             // Application parameters are passed to the Ingestion application instance.
             NameValueCollection appInstanceParameters = new NameValueCollection();
             appInstanceParameters["IotHubConnectionString"] = parameters.IotHubConnectionString;
-
+            appInstanceParameters["ReplicaSetSize"] = parameters.ReplicaSetSize.ToString();
             ApplicationDescription application = new ApplicationDescription(
                 new Uri($"{Names.IngestionApplicationPrefix}/{name}"),
                 Names.IngestionApplicationTypeName,
@@ -78,8 +78,8 @@ namespace Iot.Admin.WebService.Controllers
             {
                 ApplicationName = application.ApplicationName,
                 HasPersistedState = true,
-                MinReplicaSetSize = 1,
-                TargetReplicaSetSize = 1,
+                MinReplicaSetSize = parameters.ReplicaSetSize,   // Previous 3 for 5 node cluster and 1 for 1 node cluster
+                TargetReplicaSetSize = parameters.ReplicaSetSize,
                 PartitionSchemeDescription = new UniformInt64RangePartitionSchemeDescription(eventHubInfo.PartitionCount, 0, eventHubInfo.PartitionCount - 1),
                 ServiceName = serviceNameUriBuilder.Build(),
                 ServiceTypeName = Names.IngestionRouterServiceTypeName
